@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barungpulumacan</title>
+    <link rel="stylesheet" href="style.css">    
+    <style>
+        .image-caption img {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+}
+
+        /* Tambahkan kode CSS untuk gambar latar belakang di sini */
+        body {
+            background-image: url('back 10.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        aside h2 {
+            text-align: right;
+        }
+
+        .image-caption {
+            position: relative;
+        }
+
+        /* Gaya Caption Enlarged */
+        .enlarged {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            margin: auto;
+            object-fit: contain;
+        }
+
+        /* Gaya Caption saat diperbesar */
+        .enlarged::after {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: -1;
+        }
+
+        /* Gaya Caption saat diperbesar */
+        .enlarged:hover {
+            cursor: zoom-out;
+        }
+
+        /* Gaya Caption saat diperbesar */
+        .enlarged:hover::after {
+            cursor: zoom-out;
+        }
+    </style>
+    <link rel="icon" href="logo-barung-pulu-macan.ico" type="image/x-icon">
+    <script>
+        // JavaScript code to enlarge images on click
+        window.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.image-caption img');
+
+            images.forEach(image => {
+                image.addEventListener('click', () => {
+                    image.classList.toggle('enlarged');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo bpm kecil.png" alt="Logo Website">
+        <h1>Barung Pulu Macan</h1>
+        <nav>
+            <ul>
+                <li class="slide-menu" id="slideMenu1">
+                    <a href="#"><img src="VR 1.png" alt="VR"></a>
+                    <ul>
+                        <li><a href="view pondok kecil.html">PONDOK KECIL</a></li>
+
+                        <li><a href="view taman rumput.html">TAMAN RUMPUT</a></li>
+
+                        <li><a href="JALAN DAN PONDOK KECIL.html">JALAN DEPAN RESTO</a></li>
+
+                        <li><a href="parking area.html">PARKING AREA</a></li>
+
+                        <li><a href="ATV area 1.html">ATV SIRCUIT</a></li>
+
+                        <li><a href="area  outbound 2.html">AREA OUTHBOUND</a></li>
+
+                    </ul>
+                </li>
+                <li class="slide-menu" id="slideMenu2">
+                    <a href="#"><img src="RES 2.png" alt="Menu Makanan"></a>
+                    <ul>
+                        <li><a href="Daftarmenumakanan.html">DAFTAR MENU RESTO</a></li>
+                    </ul>
+                </li>
+                <li class="slide-menu" id="slideMenu3">
+                    <a href="#"><img src="GAL 3.png" alt="Menu Foto"></a>
+                    <ul>
+                        <li><a href="GALERY.html">GALLERY</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="image-caption">
+            <img src="maskod.png" alt="Foto 1">
+        </div>
+        <aside>
+                <span class="menu-caption">
+                    <div class="column">
+                    "Wisata barung pulu macan" adalah wisata yang terletak di kab karo sumatera utara tepatnya di desa jaranguda. 
+                    wisata barung pulu macan adalah tempat wisata yang memiliki keunikan tersendiri.
+                    dengan konsep farm and resto.
+                    Di tempat ini memiliki banyak beragam kegiatan yang bisa dilakukan oleh para pengunjung. 
+                    Beberapa kegiatan yang bisa dilakukan di tempat wisata barung pulu macan ini adalah bersantai di taman rumput yang luas, berkuda, menjelajahi 
+                    wahana outbound di atas pohon, memanah, bermain wahana ATV. Di wisata barung pulu macan ini juga memiliki tempat makan atau resto. Para pengunjung bisa menikmati menu-menu yang terdapat pada resto barung pulu macan. 
+                    Jika ingin melihat menu menu makanan, bisa klik atau tekan tombol menu resti di atas.Jika ingin melihat foto foto atau gambaran wisata barung pulu macan bisa klik tombol menu galery diatas.
+                    jika ingin melihat virtual reality pada wisata barung pulu macan
+                    bisa juga melihat panorama 360 derajat dengan meng-klik tombol VR di atas.
+                    </div>
+                    <div class="colum right">
+                        <a href="https://www.instagram.com/barungpulumacan/" class="menu-link">INSTAGRAM</a>
+                    </div>
+                </div>
+                
+                    <div class="colum right">
+                        <img src="iphone 44.png" alt="iphone"style=
+                        "width: 600px; 
+                        height: 600px; 
+                        margin: 20px; 
+                        padding: 10px; 
+                        position: relative; 
+                        top: 60px; 
+                        left: 50px;">
+                    </div>
+            
+                </span>
+                <section>
+            <main>
+                    <h2>LOKASI BARUNG PULU MACAN</h2>
+                    <!-- Tambahkan kode peta di sini -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15859.322526852122!2d98.500822!3d3.2152003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303103efc9e109a7%3A0xaf3068a1545feb61!2sBarung%20Pulu%20Macan!5e0!3m2!1sen!2sid!4v1624104346032!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+        </main>
+    </section>
+    <footer>
+        <p>Copyright/Samuel Sembiring &copy; 2023</p>
+    </footer>
+</body>
+</html>
